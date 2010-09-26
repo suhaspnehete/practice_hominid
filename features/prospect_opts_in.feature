@@ -8,7 +8,7 @@ Feature: prospect opts in
   Scenario: opt in successful
     Given I am on the opt-in page
     When I fill in "Firstname" with "Kenneth"
-    And I fill in "Email" with "k@example.com"
+    And I fill in "Email" with "k@somedomain.com"
     And I press "Submit"
     Then I should be redirected
     And I should see "Please verify your email address."
