@@ -14,6 +14,9 @@ module NavigationHelpers
     when /the opt\-in page/
       'prospects/new'
 
+    when /the subscribers page/
+      'subscribers'
+
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
