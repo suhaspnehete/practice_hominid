@@ -2,8 +2,8 @@ require "spec_helper"
 
 describe "subscribers/index.html.erb" do
   let(:subscribers) {[
-      {'First_Name' => 'Kenneth', 'Email' => 'k@example.com'},
-      {'First_Name' => 'Another', 'Email' => 'a@example.com'}
+      {'First_Name' => 'Kenneth', 'Email_Address' => 'k@example.com'},
+      {'First_Name' => 'Another', 'Email_Address' => 'a@example.com'}
     ]}
 
   before do
@@ -21,8 +21,8 @@ describe "subscribers/index.html.erb" do
   it "renders the firstnames and emails of all subscribers" do
     render
     subscribers.each do |s|
-      rendered.should have_selector('tr td', :content => s[:First_Name])
-      rendered.should have_selector('tr td', :content => s[:Email])
+      rendered.should have_selector('tr td', :content => s['First_Name'])
+      rendered.should have_selector('tr td', :content => s['Email_Address'])
     end
   end
 end

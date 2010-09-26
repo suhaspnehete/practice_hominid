@@ -5,8 +5,8 @@
   </tr>
   <% @subscribers.each do |s| %>
     <tr>
-      <td>s[:First_Name]</td>
-      <td>s[:Email]</td>
+      <td><%= s['First_Name'] %></td>
+      <td><%= s['Email_Address'] %></td>
     </tr>
   <% end %>
 </table>
