@@ -1,0 +1,12 @@
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Email</th>
+  </tr>
+  <% @subscribers.each do |s| %>
+    <tr>
+      <td>s[:First_Name]</td>
+      <td>s[:Email]</td>
+    </tr>
+  <% end %>
+</table>
